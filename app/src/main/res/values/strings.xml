@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parcelas</string>
+    <string name="button">Button</string>
+    <string name="direito"><![CDATA[>]]></string>
+    <string name="Esquerdo"><![CDATA[<]]></string>
+
+
+</resources>

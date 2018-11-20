@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "214726241706",
+    "firebase_url": "https://parcelas-90c23.firebaseio.com",
+    "project_id": "parcelas-90c23",
+    "storage_bucket": "parcelas-90c23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214726241706:android:880fc81e480429c4",
+        "android_client_info": {
+          "package_name": "thiagoalves.parcelas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214726241706-j6120t47f5g4eftfmnl0uts7oo9mr7di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbeLzB-FgRMUmW3wkprO6gnZ1ZUqNzbqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
