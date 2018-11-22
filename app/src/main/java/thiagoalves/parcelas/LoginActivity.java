@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.Task;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private static String email;
     private GoogleSignInClient mGoogleSignInClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,14 @@ public class LoginActivity extends AppCompatActivity {
 
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         assert account != null;
-        Log.d("Carai",account.getEmail());
-        Log.d("Carai",account.getId());
+        setAccount(account.getEmail());
+
+
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
+
+
         com.google.android.gms.common.SignInButton google = findViewById(R.id.sign_in_button);
         google.findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void setAccount(String email){
+        this.email = email;
+    }
+    public static String getEmail(){
+        return email;
     }
 
     private int RC_SIGN_IN = 0;
@@ -65,9 +77,6 @@ public class LoginActivity extends AppCompatActivity {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
-            assert account != null;
-            Log.d("Carai",account.getEmail());
-            Log.d("Carai",account.getId());
             // Signed in successfully, show authenticated UI.
             //updateUI(account);
         } catch (ApiException e) {

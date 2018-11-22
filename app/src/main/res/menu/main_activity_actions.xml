@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/action_search"
+android:title="Adicionar Amigos"/>
+<item android:id="@+id/action_compose"
+android:title="Colocar foto"/>
+<item android:id="@+id/EntrarEmUmGrupo"
+    android:title="Entrar Em Um Grupo"/>
+<item android:id="@+id/CriarumGrupo"
+    android:title="Criar um Grupo"/>
+
+
+
+</menu>
